@@ -1,0 +1,106 @@
+
+html{font-family: Arial, Helvetica, sans-serif; color: #732104;}
+nav{background-color: #FEF7E2; width: 100%; margin: 0; padding: 0;}
+body{width: auto; }
+ul li {list-style: none}
+ul{margin: 0; padding: 0;}
+
+/* breakpoint */
+@media (min-width: 0px) and (max-width: 576px){
+
+   ul{display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; padding: 25px; align-items: center;}
+   li{ margin:10px; border-radius:90px; display:flex ; padding: 20px; width: 33%; justify-content: center; background-color: #FFDF7F; align-items: center; font-weight: bold; }
+   li.shop{width: 100%; display: flex; justify-content: center; min-height: 100px; font-size: 1.5em;}
+   div.toolbar{display: flex;}
+   ul li img{width: 10%;}
+   nav{font-size: 1.5em;  border-radius: 90px; }
+   nav ul li img {width: 22%;}
+   h1{text-align: center; font-weight: 900; font-size: 3em;}
+   div.scheda{width: 100%; border-radius: 90px; font-size: 1.3em; background-color: #FEF7E2; padding: 0px 0px 15px 0px; margin-bottom: 50px;}
+   div.scheda img{width: 100%; border-radius: 75px 75px 0px 0px;}
+   div span{font-weight: bold;}
+   div.titpre{display: flex; flex-direction: wrap; padding: 25px 60px 25px 60px}
+   div.titolo, div.prezzo{width: 50%;}
+   div.prezzo{display: flex; justify-content: end;}
+   button{ padding: 10px 40px 10px 40px; 
+    width: 60%;
+    background-color: #FFDF7F; 
+    text-align: center; 
+    display: flex; 
+    margin: auto; 
+    border: none; 
+    font-size: 1.1em; 
+    color: #732104; 
+    font-weight: 700; 
+    border-radius: 90px;
+    justify-content: space-around;
+    }
+    .final{ background-color:#FEF7E2; padding: 20px 50px 20px 50px ; font-size: 1.8em;}
+    div.final img{width: 100%;}
+    h2{font-size: 2em; font-weight: 900; text-align: center;}
+    p span{font-weight: 900;}
+    
+    
+
+}
+
+
+
+@media (min-width: 577px)and (max-width: 991px) { 
+
+    ul{display: flex; align-items: center;  justify-content: space-between; padding: 25px; align-items: center; order: 2,3,1,4,5;}
+    li{ margin:3px; border-radius:60px; display:flex ; padding: 20px; width:15%; justify-content: center; background-color: #FFDF7F; align-items: center; font-weight: bold; font-size: 0.7em;}
+    li.shop{display: flex; justify-content: center; min-height: 80px; font-size: 1.5em; width: 25%;}
+    ul :nth-child(1){order: 3;}
+    ul :nth-child(2){order: 1;}
+    ul :nth-child(3){order: 2;}
+    ul :nth-child(4){order: 4;}
+    ul :nth-child(5){order: 5;}
+    div.toolbar{display: flex;}
+    nav{font-size: 1.5em; }
+    nav ul li img  { width: 25%; order: 1;}
+    h1{text-align: left; font-weight: 900; font-size: 3em;}
+    
+    div.scheda{width: 45%; border-radius: 90px; font-size: 1.3em; background-color: #FEF7E2; padding: 0px 0px 15px 0px; margin-bottom: 50px;}
+    div.scheda img{width: 100%; border-radius: 75px 75px 0px 0px;}
+    div span{font-weight: bold;}
+    div.titpre{display: flex; flex-direction: wrap; padding: 25px 60px 25px 60px}
+    div.titolo, div.prezzo{width: 50%;}
+    div.prezzo{display: flex; justify-content: end;}
+    button{ padding: 10px 40px 10px 40px; 
+     width: 60%;
+     background-color: #FFDF7F; 
+     text-align: center; 
+     display: flex; 
+     margin: auto; 
+     border: none; 
+     font-size: 1.1em; 
+     color: #732104; 
+     font-weight: 700; 
+     border-radius: 90px;
+     justify-content: space-around;
+     }
+     .final{ background-color:#FEF7E2; padding: 20px 50px 20px 50px ; font-size: 1.2em;}
+     div.final img{width: 100%;}
+     h2{font-size: 2em; font-weight: 900; text-align: center;}
+     p span{font-weight: 900;}
+     
+     .scehde{display: flex; flex-wrap: wrap; justify-content: space-around; font-size: 0.8em;}
+
+
+
+
+}
+
+
+@media (min-width: 992px)and (max-width: 1199px) { ... }
+
+
+@media (min-width: 1200px)and (max-width: 1399px) { ... }
+
+
+@media (min-width: 1400px){ ... }
+
+
+
+
