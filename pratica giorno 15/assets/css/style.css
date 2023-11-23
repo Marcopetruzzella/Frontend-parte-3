@@ -21,7 +21,7 @@ ul{margin: 0; padding: 0;}
    div span{font-weight: bold;}
    div.titpre{display: flex; flex-direction: wrap; padding: 25px 60px 25px 60px}
    div.titolo, div.prezzo{width: 50%;}
-   div.prezzo{display: flex; justify-content: end;}
+   div.prezzo{display: flex; justify-content: end; align-items: center;}
    button{ padding: 10px 40px 10px 40px; 
     width: 60%;
     background-color: #FFDF7F; 
@@ -51,14 +51,14 @@ ul{margin: 0; padding: 0;}
     ul{display: flex; align-items: center;  justify-content: space-between; padding: 25px; align-items: center; order: 2,3,1,4,5;}
     li{ margin:3px; border-radius:60px; display:flex ; padding: 20px; width:15%; justify-content: center; background-color: #FFDF7F; align-items: center; font-weight: bold; font-size: 0.7em;}
     li.shop{display: flex; justify-content: center; min-height: 80px; font-size: 1.5em; width: 25%;}
-    ul :nth-child(1){order: 3;}
+    ul :nth-child(1){order: 3; text-align: right; flex-direction: row-reverse; justify-content: space-around;}
     ul :nth-child(2){order: 1;}
     ul :nth-child(3){order: 2;}
     ul :nth-child(4){order: 4;}
     ul :nth-child(5){order: 5;}
     div.toolbar{display: flex;}
     nav{font-size: 1.5em; }
-    nav ul li img  { width: 25%; order: 1;}
+    nav ul li img  { width: 50px;}
     h1{text-align: left; font-weight: 900; font-size: 3em;}
     
     div.scheda{width: 45%; border-radius: 90px; font-size: 1.3em; background-color: #FEF7E2; padding: 0px 0px 15px 0px; margin-bottom: 50px;}
@@ -66,7 +66,7 @@ ul{margin: 0; padding: 0;}
     div span{font-weight: bold;}
     div.titpre{display: flex; flex-direction: wrap; padding: 25px 60px 25px 60px}
     div.titolo, div.prezzo{width: 50%;}
-    div.prezzo{display: flex; justify-content: end;}
+    div.prezzo{display: flex; justify-content: end; align-items: center;}
     button{ padding: 10px 40px 10px 40px; 
      width: 60%;
      background-color: #FFDF7F; 
@@ -82,8 +82,8 @@ ul{margin: 0; padding: 0;}
      }
      .final{ background-color:#FEF7E2; padding: 20px 50px 20px 50px ; font-size: 1.2em;}
      div.final img{width: 100%;}
-     h2{font-size: 2em; font-weight: 900; text-align: center;}
-     p span{font-weight: 900;}
+     h2{font-size: 2em; font-weight: 900; text-align: left;}
+    h3{font-weight: 900;}
      
      .scehde{display: flex; flex-wrap: wrap; justify-content: space-around; font-size: 0.8em;}
 
@@ -93,7 +93,49 @@ ul{margin: 0; padding: 0;}
 }
 
 
-@media (min-width: 992px)and (max-width: 1199px) { ... }
+@media (min-width: 992px)and (max-width: 1199px) {
+    nav{width: 30%};
+    main{width: 70%;}
+    body{display: flex;}
+    ul{display: flex; align-items: center;  justify-content: space-between; padding: 25px; align-items: center; order: 2,3,1,4,5; flex-direction: column;}
+    li{ margin:10PX; border-radius:60px; display:flex ; padding: 20px ; min-height: 50px; width:90%; justify-content: center; background-color: #FFDF7F; align-items: center; font-weight: bold; font-size:1em;}
+    li.shop{display: flex; justify-content: center; font-size: 1.5em; width: 90%; justify-content: space-around;}
+   
+    div.toolbar{display: flex;}
+ 
+    nav ul li img  { width: 50px;}
+    h1{text-align: left; font-weight: 900; font-size: 3em;}
+    
+    div.scheda{width: 20%; border-radius: 40px; font-size: 1em; background-color: #FEF7E2; padding: 0px 0px 15px 0px; margin-bottom: 50px;}
+    div.scheda img{width: 100%; border-radius: 45px 45px 0px 0px;}
+    div span{font-weight: 700; font-size: 1.2em;}
+    div.titpre{display: flex; flex-direction: wrap; padding: 10px}
+    div.titolo{width: 75%;}
+    div.prezzo{width: 25%;}
+    div.prezzo{display: flex; justify-content: end; align-items: center;}
+    button{ padding: 10px 10px 10px 10px; 
+     width: 60%;
+     background-color: #FFDF7F; 
+     text-align: center; 
+     display: flex; 
+     margin: auto; 
+     border: none; 
+     font-size: 0.9em; 
+     color: #732104; 
+     font-weight: 700; 
+     border-radius: 90px;
+     justify-content: space-around;
+     }
+     .final{ background-color:#FEF7E2; padding: 20px 50px 20px 50px ; font-size: 1.2em;}
+     div.final img{width: 100%;}
+     h2{font-size: 2em; font-weight: 900; text-align: left;}
+    h3{font-weight: 900;}
+     
+     .scehde{display: flex; flex-wrap: wrap; justify-content: space-around; font-size: 0.8em;}
+
+
+
+ }
 
 
 @media (min-width: 1200px)and (max-width: 1399px) { ... }
