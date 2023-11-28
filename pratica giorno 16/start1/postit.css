@@ -1,0 +1,29 @@
+html{ font-family: 'Indie Flower';}
+body{background-color: #666666; width: 100%;}
+main{width: 100%; display: flex; margin-top: 150px;display: flex;  flex-wrap: wrap; justify-content: space-evenly }
+.postit{width: 280px ; 
+    height: 200px; 
+    margin: 25px; 
+   
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(5);
+}
+
+
+div span {font-size: 2.7em ; font-weight: bold; margin-bottom: 10px;}
+div p {font-size: 2em }
+div.postit1{background-color: #F6F6C4; transform: rotate(15deg);  }
+div.postit2{background-color: #CAFACA;transform:rotate(-7deg)}
+div.postit3{background-color:#C6C6F1;transform:rotate(13deg)}
+
+
+main  :hover{ transition: transform 1s ease-in-out, opacity 1.5s ease-in-out; 
+     transform:rotate(0deg) ;
+     transform: scale(1.3);
+     
+}
+
